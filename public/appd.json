@@ -1,0 +1,34 @@
+{
+    "message": "OK",
+    "applications": [
+        {
+            "appId": "myGrid",
+            "name": "myGrid",
+            "title": "Grid",
+            "type": "web",
+            "details": {
+                "url": "http://localhost:5173/"
+            },
+            "interop": {
+                "userChannels": {
+                    "broadcasts": [
+                        "fdc3.instrument"
+                    ],
+                    "listensFor": [
+                        "fdc3.instrument"
+                    ]
+                },
+                "intents": {
+                    "listensFor": {
+                        "ViewInstrument": {
+                            "contexts": ["fdc3.instrument"]
+                        }
+                    },
+                    "raises": {
+                        "ViewChart": ["fdc3.instrument"]
+                    }
+                }
+            }
+        }
+    ]
+}
