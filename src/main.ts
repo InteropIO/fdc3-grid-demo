@@ -190,7 +190,6 @@ const gridOptions: GridOptions = {
   },
 };
 
-
 /******** FDC3 SETUP *******************/
 const wireUpFdc3 = (gridApi: GridApi, fdc3: DesktopAgent) => {
   fdc3.joinUserChannel("fdc3.channel.1");
